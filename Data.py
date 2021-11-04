@@ -1,1 +1,2 @@
 AnimalsList = []
+AnimalsData = None

@@ -1,0 +1,74 @@
+{   
+    "Lapin": {
+    "SpeedMin" : 20,
+    "SpeedMax" : 40,
+    "Colors" : ["Blanc","Noir","Marron","Tacheté"],
+    "Name" : ["Pinpin","Sapin","Civet", "Roger", "Lapuche"]
+    },
+
+    "Blaireau": { 
+    
+        "SpeedMin" : 25,
+        "SpeedMax" : 30,
+        "Colors" : ["Blanc rayer noir","Noir rayer blanc","Noir","Blanc"],
+        "Name" : ["Bertran","Barri","Grimbert"]
+    },
+
+    "Chat": {
+        "SpeedMin" : 20,
+        "SpeedMax" : 48,
+        "Colors" : ["Blanc","Noir","Marron","Tacheté","Gris"],
+        "Name" : ["Oumia","Chaba","Nozikaa"]
+    },
+
+    "Mésange": {
+        "SpeedMin" : 25,
+        "SpeedMax" : 50,
+        "Colors" : ["Blanche","Noir","Marron","Tachetée"],
+        "Name" : ["Mess","Angel","Cuicui"]
+    },
+
+    "Python":{
+        "SpeedMin" : 25,
+        "SpeedMax" : 35,
+        "Colors" : ["Blanc","Brun","Vert","Tacheté","Arc en ciel"],
+        "Name" : ["Salzar","Mitgar","Basilisc"]
+    },
+
+    "Chien": {
+        "SpeedMin" : 30,
+        "SpeedMax" : 35,
+        "Colors" : ["Blanc","Noir","Marron","Tacheté","Gris"],
+        "Name" : ["Ulyss","Chance","Automne", "Medor"]
+    },
+
+    "Tourterelle" :{
+        "SpeedMin" : 30,
+        "SpeedMax" : 40,
+        "Colors" : ["Blanche","Noir","Grise et blanche","Brun"],
+        "Name" : ["Tourte","Relle","CuiCuiCui"]
+    },
+
+    "Coccinelle": {
+        "SpeedMin" : 15,
+        "SpeedMax" : 20,
+        "Colors" : ["Jaune à point noir","Noir à point rouge","Rouge à point noir"],
+        "Name" : ["Cocci","Nelle","Point","Coco"]
+    },
+
+    "Abeille" : {
+        "SpeedMin" : 10,
+        "SpeedMax" : 15,
+        "Colors" : ["Jaune rayé noir","Noir rayé jaune","Jaune","Noir"],
+        "Name" : ["Miel","Bee","BizzBizz", "PicPic", "Maya"]
+    },
+
+    "Cochon" : {
+        "SpeedMin" : 5,
+        "SpeedMax" : 15,
+        "Colors" : ["Rose","Noir","Noir et blanc","Noir et rose"],
+        "Name" : ["Bayonne","GruiGrui","Ralouf", "Cochonou", "Sauciflar", "Porcinet","Spider cochon"]
+    }
+
+
+}
