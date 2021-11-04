@@ -4,7 +4,8 @@
     "SpeedMin" : 20,
     "SpeedMax" : 40,
     "Colors" : ["Blanc","Noir","Marron","Tacheté"],
-    "Name" : ["Pinpin","Sapin","Civet", "Roger", "Lapuche"]
+    "Name" : ["Pinpin","Sapin","Civet", "Roger", "Lapuche"],
+    "Symbol" : "🐇"
     },
 
     "Blaireau": { 
@@ -12,7 +13,8 @@
         "SpeedMin" : 25,
         "SpeedMax" : 30,
         "Colors" : ["Blanc rayer noir","Noir rayer blanc","Noir","Blanc"],
-        "Name" : ["Bertran","Barri","Grimbert"]
+        "Name" : ["Bertran","Barri","Grimbert"],
+        "Symbol" : "🦡"
     },
 
     "Chat": {
@@ -20,7 +22,8 @@
         "SpeedMin" : 20,
         "SpeedMax" : 48,
         "Colors" : ["Blanc","Noir","Marron","Tacheté","Gris"],
-        "Name" : ["Oumia","Chaba","Nozikaa"]
+        "Name" : ["Oumia","Chaba","Nozikaa"],
+        "Symbol" : "🐈"
     },
 
     "Mésange": {
@@ -28,7 +31,8 @@
         "SpeedMin" : 25,
         "SpeedMax" : 50,
         "Colors" : ["Blanche","Noir","Marron","Tachetée"],
-        "Name" : ["Mess","Angel","Cuicui"]
+        "Name" : ["Mess","Angel","Cuicui"],
+        "Symbol" : "🐦"
     },
 
     "Python":{
@@ -36,7 +40,8 @@
         "SpeedMin" : 25,
         "SpeedMax" : 35,
         "Colors" : ["Blanc","Brun","Vert","Tacheté","Arc en ciel"],
-        "Name" : ["Salzar","Mitgar","Basilisc"]
+        "Name" : ["Salzar","Mitgar","Basilisc"],
+        "Symbol" : "🐍"
     },
 
     "Chien": {
@@ -44,7 +49,8 @@
         "SpeedMin" : 30,
         "SpeedMax" : 35,
         "Colors" : ["Blanc","Noir","Marron","Tacheté","Gris"],
-        "Name" : ["Ulyss","Chance","Automne", "Medor"]
+        "Name" : ["Ulyss","Chance","Automne", "Medor"],
+        "Symbol" : "🐕"
     },
 
     "Tourterelle" :{
@@ -52,7 +58,8 @@
         "SpeedMin" : 30,
         "SpeedMax" : 40,
         "Colors" : ["Blanche","Noir","Grise et blanche","Brun"],
-        "Name" : ["Tourte","Relle","CuiCuiCui"]
+        "Name" : ["Tourte","Relle","CuiCuiCui"],
+        "Symbol" : "🐥"
     },
 
     "Coccinelle": {
@@ -60,7 +67,8 @@
         "SpeedMin" : 15,
         "SpeedMax" : 20,
         "Colors" : ["Jaune à point noir","Noir à point rouge","Rouge à point noir"],
-        "Name" : ["Cocci","Nelle","Point","Coco"]
+        "Name" : ["Cocci","Nelle","Point","Coco"],
+        "Symbol" : "🐞"
     },
 
     "Abeille" : {
@@ -68,7 +76,8 @@
         "SpeedMin" : 10,
         "SpeedMax" : 15,
         "Colors" : ["Jaune rayé noir","Noir rayé jaune","Jaune","Noir"],
-        "Name" : ["Miel","Bee","BizzBizz", "PicPic", "Maya"]
+        "Name" : ["Miel","Bee","BizzBizz", "PicPic", "Maya"],
+        "Symbol" : "🐝"
     },
 
     "Cochon" : {
@@ -76,7 +85,8 @@
         "SpeedMin" : 5,
         "SpeedMax" : 15,
         "Colors" : ["Rose","Noir","Noir et blanc","Noir et rose"],
-        "Name" : ["Bayonne","GruiGrui","Ralouf", "Cochonou", "Sauciflar", "Porcinet","Spider cochon"]
+        "Name" : ["Bayonne","GruiGrui","Ralouf", "Cochonou", "Sauciflar", "Porcinet","Spider cochon"],
+        "Symbol" : "🐷"
     }
 
 

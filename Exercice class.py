@@ -6,7 +6,8 @@ from Animal import Animal
 def main ():
    Animal.LoadAnimalsData()
    Animal.PrintAnimals()
-   Animal.AgingAnimals()
+   # Animal.AgingAnimals()
+   Animal.AnimalRacing()
 
 
 
