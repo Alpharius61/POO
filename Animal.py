@@ -52,8 +52,9 @@ class Animal:
         while CorrectEntry == False :
 
             try :
-                AnimalNumber = int(input("Combien d'animaux voulez vous ? "))
-                CorrectEntry = True
+                AnimalNumber = int(input("Combien d'animaux voulez vous (entre 2 et 10) ? "))
+                if AnimalNumber>=2 and AnimalNumber<=10 :
+                    CorrectEntry = True
             except :
                 continue
         
@@ -64,13 +65,17 @@ class Animal:
             # MyAnimal= Animal(MyAnimal, AnimalsPossibility[AnimalIndex],ColorList[ColorIndex],Age = random.randint(1,20))
 
             SpieciesSelcted = random.choice(AnimalsPossibility)
-            AnimalName = random.randint(0, len(Data.AnimalsData[SpieciesSelcted]['Name'])-1)
-            AnimalColor = random.randint(0, len(Data.AnimalsData[SpieciesSelcted]['Colors'])-1)
+            AnimalNameIndex = random.randint(0, len(Data.AnimalsData[SpieciesSelcted]['Name'])-1)
+            AnimalColorIndex = random.randint(0, len(Data.AnimalsData[SpieciesSelcted]['Colors'])-1)
             AnimalSpeed = random.randint(Data.AnimalsData[SpieciesSelcted]['SpeedMin'],Data.AnimalsData[SpieciesSelcted]['SpeedMax'])
             
-            MyAnimal = Animal(MyAnimal, Data.AnimalsData[SpieciesSelcted]['Spiecies'], Data.AnimalsData[SpieciesSelcted]['Name'][AnimalName], Data.AnimalsData[SpieciesSelcted]['Colors'][AnimalColor],AnimalSpeed,Age = random.randint(1,20))
+            MyAnimal = Animal(MyAnimal, Data.AnimalsData[SpieciesSelcted]['Spiecies'], Data.AnimalsData[SpieciesSelcted]['Name'][AnimalNameIndex], Data.AnimalsData[SpieciesSelcted]['Colors'][AnimalColorIndex],AnimalSpeed,Age = random.randint(1,20))
         
             Data.AnimalsList.append(MyAnimal)
+            Data.AnimalsData[SpieciesSelcted]['Name'].pop(AnimalNameIndex)
+            
+            if len(Data.AnimalsData[SpieciesSelcted]['Name']) == 0 :
+                AnimalsPossibility.remove(SpieciesSelcted)
             
             Determinant = "Le "
 
@@ -80,8 +85,38 @@ class Animal:
             elif MyAnimal.Spicies == "Abeille" :
                 Determinant = "L'"
             
-            print(f"{Determinant}{MyAnimal.Spicies}, animal numéro {MyAnimal.Number + 1}, de couleur {MyAnimal.Color} a {MyAnimal.Age} ans")
+            # print(f"{Determinant}{MyAnimal.Spicies}, animal numéro {MyAnimal.Number + 1}, de couleur {MyAnimal.Color} a {MyAnimal.Age} ans")
     
+
+    @classmethod
+    def AnimalRacing(cls):
+        CorrectEntry = False
+        while CorrectEntry == False :
+
+            try :
+                RacingLength = int(input("\nQuelle est la longueure de la course (entre 100 et 1000 Km) :\n"))
+                if RacingLength>= 100 and RacingLength<= 1000:
+                    CorrectEntry = True
+            except :
+                continue
+    
+        
+        ListOfAnimalsSpeed = []
+        for AnimalRacer in Data.AnimalsList :
+            ListOfAnimalsSpeed.append(AnimalRacer.Speed)
+        ListOfAnimalsSpeed = sorted(ListOfAnimalsSpeed,reverse= True)
+        
+        Ranking = 1
+        for AnimalSpeed in ListOfAnimalsSpeed :
+            for Animal in Data.AnimalsList :
+                if AnimalSpeed == Animal.Speed :
+                    end = "ème"
+                    if Ranking == 1:
+                        end = "er"
+
+                    print(f"Le {Animal.Spicies} nommé {Animal.Name}, avançant à {Animal.Speed}km/h, est arrivé {Ranking}{end} ")
+                    Ranking += 1
+
 
 
     @classmethod
