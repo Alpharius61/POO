@@ -1,5 +1,6 @@
 {   
     "Lapin": {
+    "Spiecies" : "Lapin",
     "SpeedMin" : 20,
     "SpeedMax" : 40,
     "Colors" : ["Blanc","Noir","Marron","Tacheté"],
@@ -7,7 +8,7 @@
     },
 
     "Blaireau": { 
-    
+        "Spiecies" : "Blaireau",
         "SpeedMin" : 25,
         "SpeedMax" : 30,
         "Colors" : ["Blanc rayer noir","Noir rayer blanc","Noir","Blanc"],
@@ -15,6 +16,7 @@
     },
 
     "Chat": {
+        "Spiecies" : "Chat",
         "SpeedMin" : 20,
         "SpeedMax" : 48,
         "Colors" : ["Blanc","Noir","Marron","Tacheté","Gris"],
@@ -22,6 +24,7 @@
     },
 
     "Mésange": {
+        "Spiecies" : "Mésange",
         "SpeedMin" : 25,
         "SpeedMax" : 50,
         "Colors" : ["Blanche","Noir","Marron","Tachetée"],
@@ -29,6 +32,7 @@
     },
 
     "Python":{
+        "Spiecies" : "Python",
         "SpeedMin" : 25,
         "SpeedMax" : 35,
         "Colors" : ["Blanc","Brun","Vert","Tacheté","Arc en ciel"],
@@ -36,6 +40,7 @@
     },
 
     "Chien": {
+        "Spiecies" : "Chien",
         "SpeedMin" : 30,
         "SpeedMax" : 35,
         "Colors" : ["Blanc","Noir","Marron","Tacheté","Gris"],
@@ -43,6 +48,7 @@
     },
 
     "Tourterelle" :{
+        "Spiecies" : "Tourterelle",
         "SpeedMin" : 30,
         "SpeedMax" : 40,
         "Colors" : ["Blanche","Noir","Grise et blanche","Brun"],
@@ -50,6 +56,7 @@
     },
 
     "Coccinelle": {
+        "Spiecies" : "Coccinelle",
         "SpeedMin" : 15,
         "SpeedMax" : 20,
         "Colors" : ["Jaune à point noir","Noir à point rouge","Rouge à point noir"],
@@ -57,6 +64,7 @@
     },
 
     "Abeille" : {
+        "Spiecies" : "Abeille",
         "SpeedMin" : 10,
         "SpeedMax" : 15,
         "Colors" : ["Jaune rayé noir","Noir rayé jaune","Jaune","Noir"],
@@ -64,6 +72,7 @@
     },
 
     "Cochon" : {
+        "Spiecies" : "Cochon",
         "SpeedMin" : 5,
         "SpeedMax" : 15,
         "Colors" : ["Rose","Noir","Noir et blanc","Noir et rose"],

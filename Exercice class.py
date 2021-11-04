@@ -4,7 +4,7 @@ import json
 from Animal import Animal
 
 def main ():
-   
+   Animal.LoadAnimalsData()
    Animal.PrintAnimals()
    Animal.AgingAnimals()
 

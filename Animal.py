@@ -11,7 +11,8 @@ class Animal:
         self,
         Number,
         Spicies,
-        Color,
+        Name,
+        Color = "Noir",
         Speed = 0,
         Age = 1        
         ): 
@@ -22,6 +23,7 @@ class Animal:
         """
         self.Number = Number
         self.Spicies = Spicies
+        self.Name = Name
         self.Color = Color
         self.Speed = Speed
         self.Age = Age
@@ -57,18 +59,16 @@ class Animal:
         
         
         for MyAnimal in range (0, AnimalNumber) :
-            AnimalIndex = random.randint(0, len(AnimalsPossibility)-1)
-            ColorIndex = random.randint(0, len(ColorList)-1)
-            MyAnimal= Animal(MyAnimal, AnimalsPossibility[AnimalIndex],ColorList[ColorIndex],Age = random.randint(1,20))
+            # AnimalIndex = random.randint(0, len(AnimalsPossibility)-1)
+            # ColorIndex = random.randint(0, len(ColorList)-1)
+            # MyAnimal= Animal(MyAnimal, AnimalsPossibility[AnimalIndex],ColorList[ColorIndex],Age = random.randint(1,20))
 
-            # SpieciesSelcted = random.choice(AnimalsPossibility)
+            SpieciesSelcted = random.choice(AnimalsPossibility)
+            AnimalName = random.randint(0, len(Data.AnimalsData[SpieciesSelcted]['Name'])-1)
+            AnimalColor = random.randint(0, len(Data.AnimalsData[SpieciesSelcted]['Colors'])-1)
             
-            # MyAnimal= Animal(MyAnimal, Data.AnimalsData[SpieciesSelcted]['Name'],ColorList[ColorIndex],Age = random.randint(1,20))
-
-
-
-
-            
+            MyAnimal = Animal(MyAnimal, Data.AnimalsData[SpieciesSelcted]['Spiecies'], Data.AnimalsData[SpieciesSelcted]['Name'][AnimalName], Data.AnimalsData[SpieciesSelcted]['Colors'][AnimalColor], Age = random.randint(1,20))
+        
             Data.AnimalsList.append(MyAnimal)
             
             Determinant = "Le "
