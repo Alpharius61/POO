@@ -12,8 +12,8 @@ class Animal:
         Number,
         Spicies,
         Name,
-        Color = "Noir",
-        Speed = 0,
+        Color,
+        Speed,
         Age = 1        
         ): 
 
@@ -66,8 +66,9 @@ class Animal:
             SpieciesSelcted = random.choice(AnimalsPossibility)
             AnimalName = random.randint(0, len(Data.AnimalsData[SpieciesSelcted]['Name'])-1)
             AnimalColor = random.randint(0, len(Data.AnimalsData[SpieciesSelcted]['Colors'])-1)
+            AnimalSpeed = random.randint(Data.AnimalsData[SpieciesSelcted]['SpeedMin'],Data.AnimalsData[SpieciesSelcted]['SpeedMax'])
             
-            MyAnimal = Animal(MyAnimal, Data.AnimalsData[SpieciesSelcted]['Spiecies'], Data.AnimalsData[SpieciesSelcted]['Name'][AnimalName], Data.AnimalsData[SpieciesSelcted]['Colors'][AnimalColor], Age = random.randint(1,20))
+            MyAnimal = Animal(MyAnimal, Data.AnimalsData[SpieciesSelcted]['Spiecies'], Data.AnimalsData[SpieciesSelcted]['Name'][AnimalName], Data.AnimalsData[SpieciesSelcted]['Colors'][AnimalColor],AnimalSpeed,Age = random.randint(1,20))
         
             Data.AnimalsList.append(MyAnimal)
             
